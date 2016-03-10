@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Goods Shop</title>
+	<link rel="stylesheet" href="css/style-ltemlist.css">
+</head>
+
+<body>
+	<header>
+    	<div class="container">
+        	<div class="row">
+ 	       		<div id="logo">
+					<div class="logo_img">
+						<img id="logo_img" alt="" src="images/logo2.png" width="200px" height="100px">
+					</div>
+				</div>
+				
+			
+				<div align="center">
+					<div id="menu_big">
+						<nav id="nav">
+							<ul>
+				<li class="active"><a href="index.html"><div align="center"><img src="images/home.png"></div>HOME</a></li>
+				<li><a href="contactus.html"><div align="center"><img src="images/contactus.png"></div>Contact US</a></li>
+				<li><a href="promotion.html"><div align="center"><img src="images/promotion.png"></div>Promotion</a></li>
+				<li><a href="menu.html"><div align="center"><img src="images/menu.png"></div>Menu</a></li>
+							</ul>
+						</nav>
+					</div>
+				</div>
+          	</div>
+    	</div>
+	</header>
+	<div class="content">
+	
+		<div class="container normal-block">
+		<h1 style="text-align: center; font-style: italic;">Promotion list</h1>
+		<dl>
+			<dt style="height:30px; font-weight: bold; background-color:#87CEEB;font-size:24px; color: white;" >Promotion 1</dt>
+			<br>
+			<dd style="	background: rgba(250,235,215, 0.3); margin-top:-14px;" >
+				<dl>
+					<dt style="font-weight: bold;">Price</dt>
+					<dd>$10</dd>
+					<dt style="font-weight: bold;">Volume</dt>
+					<dd>184</dd>
+					<dt style="font-weight: bold;">Description</dt>
+					<dd>details</dd>
+				</dl>
+			</dd>
+			<dt style="height:30px; font-weight: bold; background-color:#87CEEB;font-size:24px; color: white;" >Promotion 2</dt>
+			<br>
+			<dd style="background: rgba(250,235,215, 0.3); margin-top:-14px;" >
+				<dl>
+					<dt style="font-weight: bold;">Price</dt>
+					<dd>$10</dd>
+					<dt style="font-weight: bold;">Volume</dt>
+					<dd>184</dd>
+					<dt style="font-weight: bold;">Description</dt>
+						<dd>details</dd>
+				</dl>
+			</dd>
+			<dt style="height:30px; font-weight: bold; background-color:#87CEEB;font-size:24px; color: white;" >Promotion 3</dt>
+			<br>
+			<dd style="background: rgba(250,235,215, 0.3); margin-top:-14px;" >
+				<dl>
+					<dt style="font-weight: bold;">Price</dt>
+					<dd>$10</dd>
+					<dt style="font-weight: bold;">Volume</dt>
+					<dd>184</dd>
+					<dt style="font-weight: bold;">Description</dt>
+						<dd>details</dd>
+				</dl>
+			</dd>
+		</dl>
+		<button class="button" onclick="javascript:buyAllGoods()" style="height:50px;">BUY</button>
+	</div>
+   	</div>
+	<div id="footer">
+		<div class="container" align="center" style="height: 100%; text-align: center;">
+			<span>TEST: Copyright 2015 - 2015 @ Right. All Rights Reserved</span>
+		</div>
+	</div>
+</body>
+<script>
+    $(function() {
+        $('.list_icon img').click(function () {
+            $('.nav').slideToggle(200, function () {
+                $('.nav').toggleClass('list-down').css('display', '');
+            });
+        });
+    })
+    
+    
+    function buyAllGoods(){
+    	alert("please go to shopcart page to buy");
+    }
+</script>
+</html>
